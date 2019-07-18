@@ -32,7 +32,9 @@ const PlaybackModal = (props) => {
 PlaybackModal.propTypes = {
   playbackDetail: PropTypes.object,
   hideModal: PropTypes.func,
-  playAlbum: PropTypes.func
+  playAlbum: PropTypes.func,
+  show: PropTypes.bool,
+  _rt: PropTypes.string
 }
 
 export default PlaybackModal;

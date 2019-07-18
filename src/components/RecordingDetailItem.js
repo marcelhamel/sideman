@@ -1,5 +1,6 @@
 // Displays current playing Spotify Track
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const RecordingDetailItem = (props) => {
   return (
@@ -7,6 +8,10 @@ const RecordingDetailItem = (props) => {
       {props.children}
     </div>
   )
+}
+
+RecordingDetailItem.propTypes = {
+  children: PropTypes.object
 }
 
 export default RecordingDetailItem;

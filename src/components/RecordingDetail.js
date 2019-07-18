@@ -2,6 +2,7 @@
 import React from 'react';
 import PersonnelList from './PersonnelList';
 import ArtistDetail from './ArtistDetail';
+import PropTypes from 'prop-types';
 
 const RecordingDetail = (props) => {
   return (
@@ -25,5 +26,17 @@ const RecordingDetail = (props) => {
     </div>
   )
 }
+
+RecordingDetail.propTypes = {
+  personnel: PropTypes.array,
+  coreMembers: PropTypes.array,
+  artistDetail: PropTypes.object,
+  detailType: PropTypes.string,
+  currentPage: PropTypes.number,
+  _rt: PropTypes.string,
+  getArtistDiscography: PropTypes.func,
+  hideDiscography: PropTypes.func,
+  findPlaybackAlbum: PropTypes.func
+};
 
 export default RecordingDetail;

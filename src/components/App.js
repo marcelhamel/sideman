@@ -5,7 +5,7 @@ import RecordingDetailContainer from './containers/RecordingDetailContainer';
 
 const App = () => {
   return (
-    <div className="h-100">
+    <div className="h-100 w-100">
       <ModalContainer />
       <div className="h-100 w-100 bg-gold flex flex-row">
         <CurrentlyPlayingContainer />
